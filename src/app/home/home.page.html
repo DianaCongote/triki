@@ -1,20 +1,73 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <table align="center">
+    <tr><font color="white"><h1><i><b>TRIKI</b></i></h1></font></tr> 
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+</table>
+
+  <table align="center">
+      <tr>
+        <font color="white"><ion-icon name="logo-octocat"></ion-icon><b color="primary">Jugador 1 : X </b></font></tr> 
+      <tr>
+        <font color="white"><ion-icon name="logo-octocat"></ion-icon><b color="primary">Jugador 2 : O </b></font></tr> 
+  </table>
+  <br>
+  <table align="center">
+    <tr>
+      <td><ion-button class="btn btn-primary btn-lg" onclick="this.disabled=true" type="button" (click)="guardaruno()"  fill="outline" color="light">
+        {{letra}}
+       </ion-button></td>
+      <td><ion-button onclick="this.disabled=true" type="button" (click)="guardardos()"  fill="outline" color="light">
+        {{letra2}}
+      </ion-button></td>
+      <td><ion-button onclick="this.disabled=true" type="button" (click)="guardartres()"  fill="outline" color="light">
+        {{letra3}}
+      </ion-button></td>
+  </tr>
+
+  
+    <tr>
+      <td><ion-button onclick="this.disabled=true" type="button" (click)="guardarcuatro()" fill="outline" color="light">
+        {{letra4}}
+      </ion-button></td>
+      <td><ion-button onclick="this.disabled=true" type="button" (click)="guardarcinco()" fill="outline" color="light">
+        {{letra5}}
+      </ion-button></td>
+      <td><ion-button onclick="this.disabled=true" type="button" (click)="guardarseis()" fill="outline" color="light">
+        {{letra6}}
+      </ion-button></td>
+    </tr>
+ 
+
+  
+    <tr>
+      <td><ion-button onclick="this.disabled=true" type="button" (click)="guardarsiete()" fill="outline" color="light">
+        {{letra7}}
+      </ion-button></td>
+      <td><ion-button onclick="this.disabled=true" type="button" (click)="guardarocho()"  fill="outline" color="light">
+        {{letra8}}
+      </ion-button></td>
+      <td><ion-button onclick="this.disabled=true" type="button" (click)="guardarnueve()" fill="outline" color="light">
+        {{letra9}}
+      </ion-button></td>
+    </tr>
+
+  </table>
+
+  <table align="center">
+    <tr>
+      <td>
+        <ion-button type="button" color="dark" expand="block" href="#" >
+          Volver a jugar
+          <ion-icon name="game-controller-outline"></ion-icon>
+        </ion-button>
+      </td>
+  </tr>
+  </table>
+  
+
+ 
+  
+
 </ion-content>
